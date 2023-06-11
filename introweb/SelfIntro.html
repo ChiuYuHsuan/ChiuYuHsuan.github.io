@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>網頁範例</title>
+  <style>
+    /* CSS樣式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F0F0F0;
+    }
+
+    /* 上方選單樣式 */
+    .menu {
+      background-color: #333;
+      color: #fff;
+      padding: 17px;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      font-size: 17px;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 50px;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+    }
+
+
+    /* 橫幅樣式 */
+    .banner {
+      background-image: url('Banner1.jpg');
+      width: 1050px;
+      height: 320px;
+      padding: 20px;
+      margin: auto;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 30px 30px;
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+    .gradient-text {
+      background-image: linear-gradient(to right, #FFFFFF, #7B7B7B);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /*自我介紹框*/
+    .selfIntro{
+      background-color:  #FCFCFC;
+      position:absolute;
+      left:110px;
+      top:160px;
+      width: 350px;
+      height: 450px;
+      border-radius: 20px;
+      text-align: center;
+      border-width: 2px;
+      border-color: black;
+    }
+
+    .cPhoto{
+        width: 150px;
+        height: 150px;
+        display:block;
+        margin:auto;
+        padding-top:30px;
+    }
+
+    .contect{
+        width: 125px;
+        height: 35px;
+        background: #408080;
+        border: 1px solid #A9A9A9;
+        color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        margin-top: 18px;
+    }
+
+    /*其他自介框*/
+    .Education{
+      background-color:  #FCFCFC;
+      position:absolute;
+      left:500px;
+      top:330px;
+      width: 280px;
+      height: 280px;
+      border-radius: 20px;
+      text-align: center;
+      border-width: 2px;
+      border-color: black;
+    }
+
+    .otherInfo{
+      background-color:  #FCFCFC;
+      position:absolute;
+      left:820px;
+      top:330px;
+      width: 280px;
+      height: 280px;
+      border-radius: 20px;
+      text-align: center;
+      border-width: 2px;
+      border-color: black;
+    }
+
+    /*自我介紹:邱宇暄*/
+    .Introduction {
+      width: 990px;
+      padding-top: 250px;
+      margin: auto;
+    }
+
+    .container2{
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
+
+    /*工作與研究*/
+    .container{
+      padding-top: 20px;
+      width: 990px;
+      margin: auto;
+    }
+
+    li{
+      font-size: 14px;
+    }
+
+    .title{
+      color: #4F4F4F; 
+      font-size: 32px;
+    }
+    .listStyle{
+      list-style-type: disc;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+    }
+
+    /*生活影像*/
+    .Bigbox{
+      padding-top: 20px;
+      width: 990px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box{
+      width: 300px;
+    }
+
+    .box:hover img {
+      opacity: 0.5; /* 圖片半透明 */
+    }
+
+    .box .caption {
+      text-align: center;
+      color: #272727; 
+      font-size: 20px;
+    }
+
+    .box:hover .caption {
+      color: #7B7B7B;
+      font-size: 26px;  
+    }
+
+    /*尾端*/
+    .end{
+      height: 200px;
+      padding: 17px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .footerInfo{
+      color: #F0F0F0;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- 上方選單 -->
+  <div class="menu">
+    <ul>
+      <li style="padding: 4px;background-color: #E0E0E0; color: #4F4F4F; font-size: 16px;">CHIU</li>
+      <li style= "padding-right: 650px; font-size: 16px;">YU-HSUAN</li>
+      <li><a href="#bb">自述</a></li>
+      <li><a href="#cc">工作與研究</a></li>
+      <li><a href="#dd">競賽成果</a></li>
+      <li><a href="#ee">生活影像</a></li>
+    </ul>
+  </div>
+
+  <!-- 橫幅 -->
+  <div class="banner">
+    <h1 style="font-size: 48px; padding-top: 25px; color:  #E0E0E0;">Hello</h1>
+    <h2 class="gradient-text" style="font-size: 32px; padding-left: 175px;">I'm Chiu, Yu-Hsuan</h2>
+  </div>
+
+  <!-- 自我介紹框 -->
+  <div class=selfIntro>
+    <img src="ChiuPhoto.jpg" class="cPhoto"></img>
+    <h2 style="font-size: 22px;" "font-weight: bold;">邱宇暄</h2>
+    <p style="font-size: 15px;" "font-weight: bold;">CHIU, Yu-Hsuan</p>
+    <hr style="width: 70%;">
+    <p style="font-size: 14px; color: #3C3C3C;"><b>就讀院校:</b> 陽明交通大學 資訊管理所</p>
+    <p style="font-size: 14px; color: #3C3C3C;"><b>專業:</b> 網路與資訊安全</p>
+    <hr style="width: 70%;">
+    <button class=contect><a href="https://www.facebook.com/profile.php?id=100013049040235" style="color: #F0F0F0; text-decoration: none;">聯繫我</a></button>
+  </div>
+
+  <!-- 其他自介框 -->
+  <div class=Education>
+    <div style="margin: 30px;">
+    <h2 style="font-size: 22px;" "font-weight: bold; color: #3C3C3C;">Education Background</h2>
+    <p style="font-size: 14px; color: #3C3C3C;"><b>學士學位:</b> <br>台灣科技大學 管理學士班</p>
+    <p style="font-size: 14px; color: #3C3C3C;"><b>雙聯學士:</b> <br>名古屋商科大學 Global BBA</p>
+    <p style="font-size: 14px; color: #3C3C3C;"><b>碩士學位:</b> <br>陽明交通大學 資訊管理所</p>
+    </div>  
+  </div>
+
+  <div class=otherInfo>
+    <div style="margin: 30px 40px;">
+    <h2 style="font-size: 22px;" "font-weight: bold; color: #3C3C3C;">My Skills</h2>
+    <p style="font-size: 14px; color: #3C3C3C;">多益金色證書920分<br></p>
+    <p style="font-size: 14px; color: #3C3C3C;">Business Analysis<br></p>
+    <p style="font-size: 14px; color: #3C3C3C;">Java<br></p>
+    <p style="font-size: 14px; color: #3C3C3C;">Python<br></p>
+    <p style="font-size: 14px; color: #3C3C3C;">Web Design<br></p>
+    <p style="font-size: 14px; color: #3C3C3C;">Microsoft Office<br></p>
+  </div>
+  </div>
+
+  <!-- 自我介紹:邱宇暄 -->  
+  <a name="bb"></a>
+  <div class=Introduction>          
+    <h2 class=title>Introduction</h2><hr style="width: 990px">
+    <div class=container2>
+      <div style="margin:0px 50px;" >
+        <p style="font-size: 14px; color: #3C3C3C; line-height: 1.5;"><br>
+        目前就讀於陽明交通大學的資訊管理研究所，並於通訊網路與資訊安全實驗室進行網路與資安之研究。<br>
+        學士學位為台灣科技大學的管理學士班，主要專業為金融科技。學士期間曾加入了台科大科技管理所的實驗室以及資管所的應用密碼實驗室，並擔任研究助理，進行進行主路徑分析相關研究；此外，也參加了2022通訊大賽、龍騰微笑智連網、金融科技等多項競賽，通過比賽切實地將資訊能力結合至管理專業中。<br>
+        大三大四時，申請上了名古屋商科大學的雙聯學士計畫，前往日本進行了兩年的學習。在以哈佛個案為核心的教學模式下，分析並學習了高達120篇的個案。並撰寫了「Acer: Transform into Predator of Esports Market」此一個案研究，研究主題為宏碁於2014年開始的商業轉型案例，並專注於分析台灣PC產業與宏碁營運策略。
+        <br><br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 工作與研究 -->
+  <a name="cc"></a>
+  <div class=container>
+    <h2 class=title>工作與研究</h2><hr style="width: 990px">
+    <div class=container2>
+      <ul class="listStyle" style="margin:0px 40px; color: #3C3C3C;">
+        <br>
+        <li>109年8月 ~ 110年1月: 兆訊科技股份有限公司 實習生</li>
+        <li>110年2月: 與團隊成員共同創立艾菲爾科技有限公司</li>
+        <li>111年2月 ~ 111年12月: 國立台灣科技大學科技管理所
+          <ul>
+            <li>Knowledge and Technology Evolution Lab</li>
+            <li>科技部大專生計畫: 探索開放資料之研究發展與趨勢演進：可供性實現觀點</li>
+            <li>AccuHip 髖關節置換ＭＲ系統 商業開發成員</li>
+            <li>金融創新與永續金融研究計畫: 綠色金融發展軌跡與趨勢</li>
+          </ul>
+        </li>
+        <li>111年3月 ~ 111年7月: 國立台灣科技大學資訊管理所
+          <ul>
+            <li>應用密碼實驗室</li>
+            <li>身分鑑別與存取控制參考指引</li>
+            <li>6G文獻回顧：需求、推動因素、技術與資訊安全</li>
+            <li>分析具信任與隱私保護的車聯網應用服務</li>
+          </ul>
+        </li>
+        <li>111年4月 ~ 111年6月: 創新牙醫診所 粉絲專頁建置</li>
+        <li>111年6月 ~ 111年9月: 獵戶科技股份有限公司 實習生</li>
+        <li>110年11月 ~ 112年6月: 台科大管理學院 EMI計畫 TA</li><br>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 競賽成果 -->
+  <a name="dd"></a>
+  <div class=container>
+    <h2 class=title>競賽成果</h2><hr style="width: 990px">
+    <div class=container2>
+      <ul class="listStyle" style="margin:0px 40px; color: #3C3C3C;"><br>
+        <li>教育部大專校院創新創業教育計畫之「創業管理行動平台」第二名與新臺幣10萬元整創客基金補助，創立艾菲爾科技有限公司</li>
+        <li>寶金雲金融科技創意黑客松優勝</li>
+        <li>名古屋商科大學商業競賽第二名</li>
+        <li>經濟部中小企業處我的創新DNA實務應用創意旅遊行銷競賽第二名</li>
+        <li>金融科技創新園區校園成果展優勝</li>
+        <li>大專院校咖啡行銷競賽金質獎</li>
+        <li>2022通訊大賽: 聯網未來挑戰賽: 決賽入圍</li>
+        <li>中原大學第三屆創新創業競賽: 決賽入圍</li>
+        <li>兩岸大學生文博創意大賽優秀獎</li>
+        <li>2020年Fintech金融服務-校際創意競賽: 決賽入圍</li>
+        <li>第四屆龍騰微笑智聯網創業競賽: 複賽入圍</li>
+        <li>教育部青年署U-start創新創業計畫: 校內初選</li><br>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 生活影像 -->
+  <a name="ee"></a>
+  <div class=container>
+    <h2 class=title>生活影像</h2><hr style="width: 990px">
+      <div class=Bigbox>
+        <div class="box">
+          <img src="北海道.jpg" style="width:300px; border-radius: 5px;"></img>
+          <h2 class="caption">北海道札幌</h2>
+        </div>
+        <div class="box">
+          <img src="大阪.jpg" style="width:300px; border-radius: 5px;"></img>
+          <h2 class="caption">大阪海遊館</h2>
+        </div>
+        <div class="box">
+          <img src="NUCB.jpg" style="width:300px; border-radius: 5px;"></img>
+          <h2 class="caption">名古屋商科大學</h2>
+        </div>
+      </div>
+      <div class=Bigbox style="padding-bottom: 50px;">
+        <div class="box">
+          <img src="和服.jpg" style="width:300px; border-radius: 5px;"></img>
+          <h2 class="caption">京都伏見稻荷</h2>
+        </div>
+        <div class="box">
+          <img src="鐮倉.jpg" style="width:300px; border-radius: 5px;"></img>
+          <h2 class="caption">鐮倉江之島</h2>
+        </div>
+        <div class="box">
+          <img src="福岡.jpg" style="width:300px"></img>
+          <h2 class="caption">九州福岡</h2>
+        </div>
+      </div>
+  </div>
+
+  <!-- 尾端 -->
+  <footer class=end>
+    <div class="container">
+      <p>版權聲明 &copy; 2023 - Chiu, Yu-Hsuan個人網頁</p>
+      <nav>
+        <ul class="listStyle">
+          <li class=footerInfo>Mail: rachel20010118@gmail.com</a></li>
+          <li class=footerInfo>Linkedin: <a href="https://www.linkedin.com/in/%E5%AE%87%E6%9A%84-%E9%82%B1-40112b228/" style="color: #F0F0F0; font-size: 14px; text-decoration: none;">邱宇暄 (Chiu, Yu-Hsuan)</a></li>
+          <li class=footerInfo>Facebook: <a href="https://www.facebook.com/profile.php?id=100013049040235" style="color: #F0F0F0; font-size: 14px; text-decoration: none;">邱宇暄</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
+
+
